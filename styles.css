@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    105deg,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+}
+
+.content {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  flex: 1;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 3% 18%;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  font-weight: 400;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -1px;
+  left: 50%;
+  background: white;
+  transition: 0.2s ease;
+  overflow: hidden;
+}
+
+.nav-links a:hover::after {
+  left: 0%;
+  width: 100%;
+}
+
+.description {
+  flex: 1;
+  color: white;
+  margin: 0 0 120px 18%;
+}
+
+.name h1 {
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.skills h2 {
+  font-weight: 200;
+}
+
+.shapes {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
